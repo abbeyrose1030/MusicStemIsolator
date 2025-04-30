@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #393f43;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: lighter;
+text-align: center
+
+
+}
+
+
+}
+
+/* Output Section */
+#output {
+    margin: 40px 20px;
+}
+
+#output h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center
+;
+}
+
+#stems {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stem {
+    background-color: #f1f1f1;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    flex-basis: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stem h3 {
+    color: #0078d4;
+    font-size: 1.5em;
+}
+
+.stem p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
