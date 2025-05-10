@@ -1,0 +1,10 @@
+modules = ["nodejs-20", "python-3.11", "web"]
+
+[nix]
+channel = "stable-24_05"
+run = "python3 -m http.server 8000"
+language = "html"
+
+[[ports]]
+localPort = 8000
+externalPort = 80
