@@ -232,21 +232,25 @@ document.addEventListener('click', (e) => {
           return;
       }
 
-      const isCurrentlySoloed = soloBtn.classList.contains('active');
+      soloBtn.classList.toggle('active');
+      
+      // Get all active solo buttons
+      const activeSolos = Array.from(document.querySelectorAll('.solo-btn.active'))
+          .map(btn => btn.dataset.stem);
 
-      Object.entries(stems).forEach(([key, s]) => {
-          if (s.volume) {
-              if (key === stemKey) {
-                  s.volume.mute = isCurrentlySoloed; 
-              } else {
-                  s.volume.mute = !isCurrentlySoloed; 
+      // If no stems are soloed, unmute everything
+      if (activeSolos.length === 0) {
+          Object.values(stems).forEach(s => {
+              if (s.volume) s.volume.mute = false;
+          });
+      } else {
+          // Mute everything except the soloed stems
+          Object.entries(stems).forEach(([key, s]) => {
+              if (s.volume) {
+                  s.volume.mute = !activeSolos.includes(key);
               }
-          }
-      });
-
-      document.querySelectorAll('.solo-btn').forEach(btn => {
-          btn.classList.toggle('active', btn === soloBtn && !isCurrentlySoloed);
-      });
+          });
+      }
       document.querySelectorAll('.mute-btn').forEach(btn => {
           const sKey = btn.dataset.stem;
           if (stems[sKey] && stems[sKey].volume) {
