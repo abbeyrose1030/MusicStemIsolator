@@ -19,9 +19,25 @@ const songs = {
           vocals: { name: "Vocals", file: "stems/stray_dog/vocals.mp3" },
           bass: { name: "Bass", file: "stems/stray_dog/bass.mp3" },
           drums: { name: "Drums", file: "stems/stray_dog/drums.mp3" },
-          music: { name: "Music", file: "stems/stray_dog/music.mp3" }
+          music: { name: "Music", file: "stems/stray_dog/music.mp3" } 
       }
-  }
+  },
+  "Father Son Holy Ghost": {
+      stems: {
+          vocals: { name: "Vocals", file: "stems/father_son_holy_ghost/vocals.wav" },
+          bass: { name: "Bass", file: "stems/father_son_holy_ghost/bass.wav" },
+          drums: { name: "Drums", file: "stems/father_son_holy_ghost/drums.wav" },
+          music: { name: "Music", file: "stems/father_son_holy_ghost/music.wav" }
+      }
+  },
+  "Dinner For One": {
+    stems: {
+        vocals: { name: "Vocals", file: "stems/dinner_for_one/vocals.wav" },
+        bass: { name: "Bass", file: "stems/dinner_for_one/bass.wav" },
+        drums: { name: "Drums", file: "stems/dinner_for_one/drums.wav" },
+        music: { name: "Music", file: "stems/dinner_for_one/music.wav" }
+    }
+},
 };
 
 // Audio context and player setup
