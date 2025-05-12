@@ -22,23 +22,24 @@ const songs = {
           music: { name: "Music", file: "stems/stray_dog/music.mp3" } 
       }
   },
-  "Father Son Holy Ghost": {
+  "All These Hoes": {
       stems: {
-          vocals: { name: "Vocals", file: "stems/father_son_holy_ghost/vocals.wav" },
-          bass: { name: "Bass", file: "stems/father_son_holy_ghost/bass.wav" },
-          drums: { name: "Drums", file: "stems/father_son_holy_ghost/drums.wav" },
-          music: { name: "Music", file: "stems/father_son_holy_ghost/music.wav" }
+          vocals: { name: "Vocals", file: "stems/all_these_hoes/vocals.mp3" },
+          bass: { name: "Bass", file: "stems/all_these_hoes/bass.mp3" },
+          drums: { name: "Drums", file: "stems/all_these_hoes/drums.mp3" },
+          music: { name: "Music", file: "stems/all_these_hoes/music.mp3" }
       }
   },
-  "Dinner For One": {
+  "Love & War": {
     stems: {
-        vocals: { name: "Vocals", file: "stems/dinner_for_one/vocals.wav" },
-        bass: { name: "Bass", file: "stems/dinner_for_one/bass.wav" },
-        drums: { name: "Drums", file: "stems/dinner_for_one/drums.wav" },
-        music: { name: "Music", file: "stems/dinner_for_one/music.wav" }
+        vocals: { name: "Vocals", file: "stems/love_and_war/vocals.mp3" },
+        bass: { name: "Bass", file: "stems/love_and_war/bass.mp3" },
+        drums: { name: "Drums", file: "stems/love_and_war/drums.mp3" },
+        music: { name: "Music", file: "stems/love_and_war/music.mp3" }
     }
 },
 };
+
 
 // Audio context and player setup
 let currentSong = null;
